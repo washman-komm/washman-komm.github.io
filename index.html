@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>gws-auto — 予約メールをカレンダーへ</title>
+  <style>
+    :root { color-scheme: light; }
+    body {
+      font-family: "Hiragino Sans", "Noto Sans JP", system-ui, sans-serif;
+      line-height: 1.7;
+      max-width: 40rem;
+      margin: 0 auto;
+      padding: 2.5rem 1.25rem 4rem;
+      color: #1a1a1a;
+    }
+    h1 { font-size: 1.6rem; margin-bottom: 0.4rem; }
+    .lead { color: #444; margin-bottom: 2rem; }
+    h2 { font-size: 1.1rem; margin-top: 2rem; }
+    a { color: #0b57d0; }
+    footer { margin-top: 3rem; font-size: 0.9rem; color: #666; }
+  </style>
+</head>
+<body>
+  <h1>gws-auto</h1>
+  <p class="lead">
+    個人利用向けの自動化ツールです。予約確認メールを指定アドレスに転送すると、
+    内容を解析して Google カレンダーに予定を登録します。
+  </p>
+
+  <h2>できること</h2>
+  <ul>
+    <li>転送された予約メールを Gmail API で取得する</li>
+    <li>メール本文から日時・場所・件名などを抽出する</li>
+    <li>Google カレンダーに予定を作成する</li>
+  </ul>
+
+  <h2>利用する Google のデータ</h2>
+  <ul>
+    <li>Gmail（転送ラベル付きのメールの読み取りとラベル更新）</li>
+    <li>Google カレンダー（予定の作成）</li>
+  </ul>
+  <p>
+    詳細は
+    <a href="./privacy.html">プライバシーポリシー</a>
+    を参照してください。
+  </p>
+
+  <h2>対象ユーザー</h2>
+  <p>
+    開発者本人（個人）の Google アカウントでの利用を想定しています。
+    一般公開のサービスではありません。
+  </p>
+
+  <footer>
+    お問い合わせ:
+    <a href="mailto:washman.dev@gmail.com">washman.dev@gmail.com</a>
+  </footer>
+</body>
+</html>
